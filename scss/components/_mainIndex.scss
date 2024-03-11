@@ -1,0 +1,51 @@
+main {
+    margin-top: 117px;
+    font-size: 1rem;
+    @extend %flex-column;
+
+    .video-main-index {
+        @extend %bgvideo;
+    }
+
+    .encabezado-index {
+        @extend %flex-column;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.301);
+        padding-top: 50px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .box-section {
+        margin: 100px;
+        background-color: rgb(255, 255, 255);
+        @extend %flex-column;
+        width: 100%;
+
+        .section {
+            @extend %flex-row;
+            
+
+            .contenido {
+                position: relative;
+                margin: 20px;
+                border: 2px solid black;
+
+                .img-contenido {
+                    width: 14rem;
+                }
+
+                .txt-contenido {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.39);
+                    margin-top: 51px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

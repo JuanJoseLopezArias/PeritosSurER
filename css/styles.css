@@ -1,0 +1,133 @@
+@charset "UTF-8";
+main .box-section, main .encabezado-index, main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+main .box-section .section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+main .video-main-index {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+@keyframes headshake_icono {
+  0% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-6px) rotateY(-9deg) skewY(1deg);
+  }
+  37.5% {
+    transform: translateX(5px) rotateY(4.5deg) skewY(-1deg);
+  }
+  62.5% {
+    transform: translateX(-3px) rotateY(-2.25deg) skewY(0);
+  }
+  87.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    scale: 30%;
+    opacity: 0;
+  }
+  50% {
+    scale: 60%;
+    opacity: 0.8;
+  }
+  100% {
+    scale: 100%;
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: #9bcfb8;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+header .navbar {
+  height: 100px;
+}
+header .nav-item:hover {
+  background-color: rgba(128, 128, 128, 0.315);
+}
+header .logo {
+  width: 5rem;
+  border-radius: 100%;
+}
+header .tamaño-dropdown {
+  font-size: 0.8rem;
+}
+
+main {
+  margin-top: 117px;
+  font-size: 1rem;
+}
+main .encabezado-index {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.301);
+  padding-top: 50px;
+  height: 300px;
+  width: 100%;
+}
+main .box-section {
+  margin: 100px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+main .box-section .section .contenido {
+  position: relative;
+  margin: 20px;
+  border: 2px solid black;
+}
+main .box-section .section .contenido .img-contenido {
+  width: 14rem;
+}
+main .box-section .section .contenido .txt-contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+  margin-top: 51px;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */
