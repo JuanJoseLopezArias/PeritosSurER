@@ -1,0 +1,98 @@
+.main-contacto {
+    background-image: url(../img/bg-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    .caja-main-contacto {
+        margin-top: 110px;
+        @include width-heigth (100%, auto);
+        @extend %flex-row;
+        font-size: 0.8rem;
+        align-items: flex-start;
+
+        .encabezado-main-contacto {
+            margin: 0px 10px;
+            .txt-contacto {
+                @extend %caja-contenido-1;
+                text-align: start;
+            }
+        }
+
+        .caja-formulario {
+            @extend %flex-column;
+            width: 100%;
+            margin: 50px 0px;
+
+            .formulario-main-contacto {
+                @extend %caja-contenido-2;
+                margin: 0px 10px;
+
+                .formulario-row {
+                    @extend %flex-row;
+
+                    .formulario-row-column {
+                        @extend %flex-column;
+                    }
+                }
+
+                .item-form {
+                    @extend %flex-column;
+                    padding: 10px;
+
+
+                    input {
+                        @extend %efectoformulariocontacto;
+                        width: 200px;
+                    }
+
+                    .text-area {
+                        @extend %efectoformulariocontacto;
+                        height: 200px;
+                        width: 100%;
+                    }
+
+                    .checkbox {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .main-contacto {
+        .caja-main-contacto {
+
+            .encabezado-main-contacto,
+            .caja-formulario {
+                width: 450px;
+
+                .formulario-main-contacto {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .main-contacto {
+        .caja-main-contacto {
+            .encabezado-main-contacto {
+                width: 500px;
+                padding: 70px 30px 0px 30px;
+
+            }
+
+            .caja-formulario {
+                width: 500px;
+            }
+        }
+
+    }
+}

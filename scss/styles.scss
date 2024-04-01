@@ -1,9 +1,13 @@
 @import "./base/variables";
 @import "./utilities/extends";
 @import "./utilities/mixins";
-@import "./base/animations";
 @import "./components/header";
 @import "./components/mainIndex";
+@import "./components/maincursos";
+@import "./components/mainInstitucional";
+@import "./components/mainNovedades";
+@import "./components/mainContacto";
 @import "./components/footer";
 @import "./components/body";
 @import "./components/font";
+@import "./base/animations";
