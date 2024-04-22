@@ -46,21 +46,21 @@ console.log(accesoUsuarios[5]);
 function validacion() {
     const user = document.getElementById('login-usuario').value;
     const pw = document.getElementById('login-contrasenia').value;
-    let i = 0;
     let verificado = false;   
-    
-    for (let val = accesoUsuarios[i]; i < accesoUsuarios.length; i++) {
+    let i = 0
+    let val = accesoUsuarios[i]
+    for (i; i < accesoUsuarios.length; i++) {
+        val = accesoUsuarios[i]
         if (val.usuario === user && val.clave === pw) {
             verificado = true;
             break
         }
-    }
-
-    if (verificado) {
-        alert("Bienvenido " + accesoUsuarios[i].nombre);
+    } if (verificado) {
+        alert("Bienvenido " + val.nombre);
         
     } else {
         alert ("Datos incorrectos");
     }
+    
 }
 
