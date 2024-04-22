@@ -35,14 +35,22 @@ const accesoUsuarios = [
     }
 ];
 
+console.log(accesoUsuarios[0]);
+console.log(accesoUsuarios[1]);
+console.log(accesoUsuarios[2]);
+console.log(accesoUsuarios[3]);
+console.log(accesoUsuarios[4]);
+console.log(accesoUsuarios[5]);
+
+
 function validacion() {
     const user = document.getElementById('login-usuario').value;
     const pw = document.getElementById('login-contrasenia').value;
     let i = 0;
-    let verificado = false;
+    let verificado = false;   
     
     for (let val = accesoUsuarios[i]; i < accesoUsuarios.length; i++) {
-        if (val.usuario == user && val.clave == pw) {
+        if (val.usuario === user && val.clave === pw) {
             verificado = true;
             break
         }
