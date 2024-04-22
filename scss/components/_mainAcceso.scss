@@ -1,0 +1,40 @@
+.main-acceso {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../img/bg-acceso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+    .container-box {
+       
+        .box-acceso {
+            @extend %caja-contenido-2;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            height: 330px;
+            .info-acceso {
+                background-color: nth($coloresMadera, 2);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 50px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            .form-acceso {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+
+}
