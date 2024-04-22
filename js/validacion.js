@@ -2,7 +2,7 @@
 // A partir de esto, se crean los usuarios en este archivo.
 // La funcion este archivo js es validar los datos brindados el array "accesoUsuarios".
 
-let accesoUsuarios = [
+const accesoUsuarios = [
     {
         usuario: "juliaAl@gmail.com",
         clave: "1234",
@@ -36,18 +36,21 @@ let accesoUsuarios = [
 ];
 
 function validacion() {
-    let user = document.getElementById('login-usuario').value;
-    let pw = document.getElementById('login-contrasenia').value;
+    const user = document.getElementById('login-usuario').value;
+    const pw = document.getElementById('login-contrasenia').value;
     let i = 0;
     let verificado = false;
     
     for (let val = accesoUsuarios[i]; i < accesoUsuarios.length; i++) {
-        if (val.usuario[i] == user && val.clave[i] == pw) {
+        if (val.usuario == user && val.clave == pw) {
             verificado = true;
-        } 
+            break
+        }
     }
-    if (verificado === true) {
-        alert("Bienvenido " + val.nombre);
+
+    if (verificado) {
+        alert("Bienvenido " + accesoUsuarios[i].nombre);
+        
     } else {
         alert ("Datos incorrectos");
     }
