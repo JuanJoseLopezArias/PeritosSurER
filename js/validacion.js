@@ -47,10 +47,10 @@ function validacion() {
     const user = document.getElementById('login-usuario').value;
     const pw = document.getElementById('login-contrasenia').value;
     let verificado = false;   
-    let i = 0
-    let val = accesoUsuarios[i]
+    let i = 0;
+    let val = accesoUsuarios[i];
     for (i; i < accesoUsuarios.length; i++) {
-        val = accesoUsuarios[i]
+        val = accesoUsuarios[i];
         if (val.usuario === user && val.clave === pw) {
             verificado = true;
             break
