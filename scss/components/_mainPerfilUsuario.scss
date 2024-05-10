@@ -11,14 +11,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .encabezado-pu {
             text-align: center;
             @extend %caja-contenido-2;
             background-color: nth($coloresMadera, 7);
             padding: 0px;
+            width: 300px;
+
             .h1-pu {
                 padding: 10px 25px;
             }
+
             .materias-aprobadas-pu {
                 @extend %caja-contenido-2;
                 background-color: nth($coloresMadera, 2);
@@ -29,9 +33,11 @@
                 border-top-left-radius: 0px;
                 border-top-right-radius: 0px;
                 padding: 20px 10px 10px 10px;
+
                 &:hover {
                     box-shadow: none;
                 }
+
                 .notas-pu {
                     @extend %caja-contenido-1;
                     background-color: nth($coloresMadera, 1);
@@ -40,23 +46,58 @@
                 }
             }
         }
+
         .box-contenido-pu {
             @extend %flex-column;
+
             .h2-pu {
                 width: 100%;
             }
+
             .box-libros-pu {
                 @extend %flex-column;
-                .libros-pu {
+                @extend %caja-contenido-2;
+                background-color: nth($coloresMadera, 2);
+                margin: 5px 10px 30px 10px;
+                width: 300px;
+                .h2-libros-pu {
+                    margin: 15px;
+                }
+                .box-nombre-link-pu {
                     @extend %flex-row;
-                    .box-nombres-libros-pu {
-
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border: 1px solid black;
+                    background-color: nth($coloresMadera, 7);
+                    
+                    .nombres-libros-pu {
+                        margin: 0px;
                     }
-                    .box-link-libros-pu {
-                        @extend %flex-column;
-                        .link-libros {
-                            padding: 100px 0px;
-                        }
+                    .links-libros {
+                        width: 2rem;
+                        &:hover {
+                            transform: scale(1.2);
+                        } 
+                    }
+                }
+                .borde-top {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+                .borde-bot {
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+
+            }
+            .box-contacto-pu {
+                width: 300px;
+                .box-link-drive-pu {
+                    @extend %caja-contenido-2;
+                    .img-drive-pu {
+                        width: 5rem;
+                        margin: 10px;
                     }
                 }
             }

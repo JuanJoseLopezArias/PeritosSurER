@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu .box-link-libros-pu, .main-pu .box-main-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .box-contenido-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .box-contenido-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 
-.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,7 +33,7 @@
   transform: scale(1.045);
 }
 
-.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu, .main-pu .box-main-pu .encabezado-pu, .main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-sn .caja4-inst .caja-txt-inst4, .main-sn .caja4-inst .encabezado-caja4-inst, .main-sn .caja3-sn .encabezado-caja3-sn, .main-sn .caja1-sn .caja1-txt-sn, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
+.main-pu .box-main-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu, .main-pu .box-main-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu, .main-pu .box-main-pu .encabezado-pu, .main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-sn .caja4-inst .caja-txt-inst4, .main-sn .caja4-inst .encabezado-caja4-inst, .main-sn .caja3-sn .encabezado-caja3-sn, .main-sn .caja1-sn .caja1-txt-sn, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
   background-color: #9e9e9e;
   color: black;
   padding: 10px 10px;
@@ -41,7 +41,7 @@
   border-radius: 20px;
   font-size: 1rem;
 }
-.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover, .main-pu .box-main-pu .encabezado-pu:hover, .main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4:hover, .main-sn .caja4-inst .encabezado-caja4-inst:hover, .main-sn .caja3-sn .encabezado-caja3-sn:hover, .main-sn .caja1-sn .caja1-txt-sn:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
+.main-pu .box-main-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu:hover, .main-pu .box-main-pu .box-contenido-pu .box-libros-pu:hover, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover, .main-pu .box-main-pu .encabezado-pu:hover, .main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4:hover, .main-sn .caja4-inst .encabezado-caja4-inst:hover, .main-sn .caja3-sn .encabezado-caja3-sn:hover, .main-sn .caja1-sn .caja1-txt-sn:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
 }
 
@@ -706,6 +706,7 @@ header .tamaño-dropdown {
   text-align: center;
   background-color: #9e9e9e;
   padding: 0px;
+  width: 300px;
 }
 .main-pu .box-main-pu .encabezado-pu .h1-pu {
   padding: 10px 25px;
@@ -731,8 +732,44 @@ header .tamaño-dropdown {
 .main-pu .box-main-pu .box-contenido-pu .h2-pu {
   width: 100%;
 }
-.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu .box-link-libros-pu .link-libros {
-  padding: 100px 0px;
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu {
+  background-color: #dacfbf;
+  margin: 5px 10px 30px 10px;
+  width: 300px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .h2-libros-pu {
+  margin: 15px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu {
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #9e9e9e;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu .nombres-libros-pu {
+  margin: 0px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu .links-libros {
+  width: 2rem;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu .links-libros:hover {
+  transform: scale(1.2);
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .borde-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .borde-bot {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-contacto-pu {
+  width: 300px;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu .img-drive-pu {
+  width: 5rem;
+  margin: 10px;
 }
 
 footer {
