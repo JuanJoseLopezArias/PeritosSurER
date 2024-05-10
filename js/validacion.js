@@ -46,6 +46,7 @@ console.log(accesoUsuarios[5]);
 function validacion() {
     const user = document.getElementById('login-usuario').value;
     const pw = document.getElementById('login-contrasenia').value;
+    const redirect = "/perfilUsuario.html"; 
     let verificado = false;
     let i = 0;
     let val = accesoUsuarios[i];
@@ -56,15 +57,15 @@ function validacion() {
             break
         }
     } if (verificado) {
-        location.href = "./perfilUsuario.html";
-        
+        alert("Bienvenido " + val.nombre);
+        location.href = redirect;
     } else {
         alert("Datos incorrectos");
     }
 
 }
 
-localStorage.setItem("acceso", JSON.stringify(accesoUsuarios));
+
 
 
 

@@ -28,7 +28,7 @@
     .caja2-inst {
         @extend %caja-contenido-1;
         margin: 20px;
-        
+
         h2 {
             text-align: center;
         }
@@ -36,8 +36,9 @@
         .caja2-ul-inst {
             .alerta {
                 width: 6rem;
-                
+
             }
+
             .caja2-ulul-inst {
                 text-align: start;
             }
@@ -59,37 +60,38 @@
         .box-img-ul-sn {
             @extend %flex-column;
             margin: 10px;
+
             .caja-img-ul-sn {
                 .caja-img-sn {
-    
+
                     .img-que-ofrecemos,
                     .img-que-ofrecemos2 {
                         width: 7rem;
                         margin-bottom: 20px;
-    
+
                         &:hover {
                             @extend %headshake;
                         }
-    
+
                     }
-    
+
                     .img-que-ofrecemos2 {
                         border-radius: 100%;
                     }
                 }
-    
+
                 .caja-ul-sn {
-    
+
                     text-align: start;
                     padding: 30px;
                     margin-bottom: 20px;
                     @extend %caja-contenido-1;
-    
+
                 }
             }
         }
 
-        
+
     }
 
     .caja4-inst {
@@ -103,15 +105,18 @@
 
         .caja-txt-inst4 {
             @extend %caja-contenido-2;
+            align-items: center;
+            width: 280px;
+
             .link-contacto-inst4 {
                 @extend %caja-contenido-1;
                 margin-right: 100px;
                 margin-left: 100px;
                 text-align: center;
-                
-                
+
+
             }
-            
+
         }
     }
 }
@@ -169,7 +174,7 @@
 
 @media only screen and (min-width: 900px) {
     .main-sn {
-        .caja1-sn{
+        .caja1-sn {
 
             margin: 50px 100px;
 
@@ -199,5 +204,15 @@
             }
         }
 
+        .caja4-inst {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            .caja-txt-inst4 {
+                width: 300px;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu .box-link-libros-pu, .main-pu .box-main-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .box-contenido-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 
-.main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,7 +19,7 @@
   justify-content: space-around;
 }
 
-.main-contacto .caja-main-contacto .encabezado-main-contacto .txt-contacto, .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4, .main-sn .caja3-sn .box-img-ul-sn .caja-img-ul-sn .caja-ul-sn, .main-sn .caja2-inst, .main-sn .encabezado-main-sn, .main-cursos .caja-contenido-cursos, .main-cursos .encabezado-main-cursos, .main-index .container-main .caja-zigzag .zigzag {
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu .notas-pu, .main-contacto .caja-main-contacto .encabezado-main-contacto .txt-contacto, .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4, .main-sn .caja3-sn .box-img-ul-sn .caja-img-ul-sn .caja-ul-sn, .main-sn .caja2-inst, .main-sn .encabezado-main-sn, .main-cursos .caja-contenido-cursos, .main-cursos .encabezado-main-cursos, .main-index .container-main .caja-zigzag .zigzag {
   background-color: #dacfbf;
   color: black;
   padding: 10px 10px;
@@ -28,12 +28,12 @@
   font-size: 1rem;
   transition: 0.4s;
 }
-.main-contacto .caja-main-contacto .encabezado-main-contacto .txt-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4:hover, .main-sn .caja3-sn .box-img-ul-sn .caja-img-ul-sn .caja-ul-sn:hover, .main-sn .caja2-inst:hover, .main-sn .encabezado-main-sn:hover, .main-cursos .caja-contenido-cursos:hover, .main-cursos .encabezado-main-cursos:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu .notas-pu:hover, .main-contacto .caja-main-contacto .encabezado-main-contacto .txt-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4:hover, .main-sn .caja3-sn .box-img-ul-sn .caja-img-ul-sn .caja-ul-sn:hover, .main-sn .caja2-inst:hover, .main-sn .encabezado-main-sn:hover, .main-cursos .caja-contenido-cursos:hover, .main-cursos .encabezado-main-cursos:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
   transform: scale(1.045);
 }
 
-.main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-sn .caja4-inst .caja-txt-inst4, .main-sn .caja4-inst .encabezado-caja4-inst, .main-sn .caja3-sn .encabezado-caja3-sn, .main-sn .caja1-sn .caja1-txt-sn, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu, .main-pu .box-main-pu .encabezado-pu, .main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-sn .caja4-inst .caja-txt-inst4, .main-sn .caja4-inst .encabezado-caja4-inst, .main-sn .caja3-sn .encabezado-caja3-sn, .main-sn .caja1-sn .caja1-txt-sn, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
   background-color: #9e9e9e;
   color: black;
   padding: 10px 10px;
@@ -41,7 +41,7 @@
   border-radius: 20px;
   font-size: 1rem;
 }
-.main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4:hover, .main-sn .caja4-inst .encabezado-caja4-inst:hover, .main-sn .caja3-sn .encabezado-caja3-sn:hover, .main-sn .caja1-sn .caja1-txt-sn:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover, .main-pu .box-main-pu .encabezado-pu:hover, .main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-sn .caja4-inst .caja-txt-inst4:hover, .main-sn .caja4-inst .encabezado-caja4-inst:hover, .main-sn .caja3-sn .encabezado-caja3-sn:hover, .main-sn .caja1-sn .caja1-txt-sn:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
 }
 
@@ -388,6 +388,10 @@ header .tamaño-dropdown {
   background-color: #2a5398;
   color: rgb(255, 255, 255);
 }
+.main-sn .caja4-inst .caja-txt-inst4 {
+  align-items: center;
+  width: 280px;
+}
 .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4 {
   margin-right: 100px;
   margin-left: 100px;
@@ -445,6 +449,16 @@ header .tamaño-dropdown {
   }
   .main-sn .caja3-sn .box-img-ul-sn .caja-img-ul-sn {
     width: 33%;
+  }
+  .main-sn .caja4-inst {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-sn .caja4-inst .caja-txt-inst4 {
+    width: 300px;
   }
 }
 .main-novedades {
@@ -600,18 +614,25 @@ header .tamaño-dropdown {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   background-image: url(../../img/bg-acceso.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  height: 600px;
+}
+.main-acceso .container-box {
+  padding-top: 80px;
 }
 .main-acceso .container-box .box-acceso {
   padding: 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px;
-  height: 330px;
+  margin: 5px;
+  height: 440px;
+  width: 290px;
 }
 .main-acceso .container-box .box-acceso .info-acceso {
   background-color: #dacfbf;
@@ -620,13 +641,98 @@ header .tamaño-dropdown {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 50px;
+  padding: 20px;
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .main-acceso .container-box .box-acceso .form-acceso {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+.main-acceso .container-box .box-acceso .form-acceso .form-acceso-child1 .form-box {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.main-acceso .container-box .box-acceso .form-acceso .form-acceso-child1 .form-box .boton {
+  width: 100px;
+}
+.main-acceso .container-box .box-acceso .form-acceso .form-acceso-child1 .form-box .padding-label {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+  .main-acceso .container-box .box-acceso {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .main-acceso .container-box {
+    padding-top: 20px;
+  }
+  .main-acceso .container-box .box-acceso {
+    flex-direction: row;
+    width: 680px;
+    height: 300px;
+  }
+  .main-acceso .container-box .box-acceso .info-acceso {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+  .main-acceso .container-box .box-acceso .form-acceso {
+    width: 50%;
+  }
+}
+.main-pu {
+  background-image: url(../../img/bg-acceso.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 100px;
+}
+.main-pu .box-main-pu {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-pu .box-main-pu .encabezado-pu {
+  text-align: center;
+  background-color: #9e9e9e;
+  padding: 0px;
+}
+.main-pu .box-main-pu .encabezado-pu .h1-pu {
+  padding: 10px 25px;
+}
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu {
+  background-color: #dacfbf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 20px 10px 10px 10px;
+}
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover {
+  box-shadow: none;
+}
+.main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu .notas-pu {
+  background-color: #2a5398;
+  width: 100px;
+  margin: 5px 10px 5px 10px;
+}
+.main-pu .box-main-pu .box-contenido-pu .h2-pu {
+  width: 100%;
+}
+.main-pu .box-main-pu .box-contenido-pu .box-libros-pu .libros-pu .box-link-libros-pu .link-libros {
+  padding: 100px 0px;
 }
 
 footer {

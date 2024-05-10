@@ -1,0 +1,65 @@
+.main-pu {
+    background-image: url(../../img/bg-acceso.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 100px;
+
+    .box-main-pu {
+        padding: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .encabezado-pu {
+            text-align: center;
+            @extend %caja-contenido-2;
+            background-color: nth($coloresMadera, 7);
+            padding: 0px;
+            .h1-pu {
+                padding: 10px 25px;
+            }
+            .materias-aprobadas-pu {
+                @extend %caja-contenido-2;
+                background-color: nth($coloresMadera, 2);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                padding: 20px 10px 10px 10px;
+                &:hover {
+                    box-shadow: none;
+                }
+                .notas-pu {
+                    @extend %caja-contenido-1;
+                    background-color: nth($coloresMadera, 1);
+                    width: 100px;
+                    margin: 5px 10px 5px 10px;
+                }
+            }
+        }
+        .box-contenido-pu {
+            @extend %flex-column;
+            .h2-pu {
+                width: 100%;
+            }
+            .box-libros-pu {
+                @extend %flex-column;
+                .libros-pu {
+                    @extend %flex-row;
+                    .box-nombres-libros-pu {
+
+                    }
+                    .box-link-libros-pu {
+                        @extend %flex-column;
+                        .link-libros {
+                            padding: 100px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
