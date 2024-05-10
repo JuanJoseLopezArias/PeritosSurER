@@ -706,7 +706,7 @@ header .tamaño-dropdown {
   text-align: center;
   background-color: #9e9e9e;
   padding: 0px;
-  width: 300px;
+  width: 280px;
 }
 .main-pu .box-main-pu .encabezado-pu .h1-pu {
   padding: 10px 25px;
@@ -735,7 +735,7 @@ header .tamaño-dropdown {
 .main-pu .box-main-pu .box-contenido-pu .box-libros-pu {
   background-color: #dacfbf;
   margin: 5px 10px 30px 10px;
-  width: 300px;
+  width: 280px;
 }
 .main-pu .box-main-pu .box-contenido-pu .box-libros-pu .h2-libros-pu {
   margin: 15px;
@@ -765,7 +765,7 @@ header .tamaño-dropdown {
   border-bottom-right-radius: 10px;
 }
 .main-pu .box-main-pu .box-contenido-pu .box-contacto-pu {
-  width: 300px;
+  width: 280px;
 }
 .main-pu .box-main-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu .img-drive-pu {
   width: 5rem;
