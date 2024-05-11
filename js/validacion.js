@@ -46,7 +46,7 @@ console.log(accesoUsuarios[5]);
 function validacion() {
     const user = document.getElementById('login-usuario').value;
     const pw = document.getElementById('login-contrasenia').value;
-    const redirect = "/perfilUsuario.html"; 
+    const redirect = "perfilUsuario.html";
     let verificado = false;
     let i = 0;
     let val = accesoUsuarios[i];
@@ -57,13 +57,35 @@ function validacion() {
             break
         }
     } if (verificado) {
-        alert("Bienvenido " + val.nombre);
-        location.href = redirect;
+        
+        history.pushState(null, null, redirect);
+        return val;
     } else {
         alert("Datos incorrectos");
     }
 
 }
+
+// Obtén el elemento h1
+const h1 = document.getElementById('h1-pu');
+
+// Obtener el nombre del usuario desde algún origen de datos
+const obtenerNombre = () => {
+  // Aquí debes implementar la lógica para obtener el nombre del usuario
+  // Puedes utilizar una llamada a una API o acceder a una variable global
+  const nombreUsuario = validacion().nombre; // Ejemplo: nombre obtenido de una API
+
+  // Actualizar el contenido del encabezado h1
+  h1.textContent = 'Bienvenido ' + nombreUsuario;
+};
+
+// Llamar a la función para obtener el nombre del usuario y actualizar el encabezado h1
+obtenerNombre();
+
+
+
+
+
 
 
 

@@ -8,8 +8,6 @@
   <!-- Link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--Link Animate CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Link de fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +16,6 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <!-- Link Boxicons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Link AOS Js-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- Link de css -->
-  <link rel="stylesheet" href="../css/styles.css">
   <!-- SEO -->
   <meta name="keywords"
     content="contacto, capacitadores, perito clasificador, granos, curso, agricultura, consulta, información, formación, expertos">
@@ -30,6 +23,10 @@
     content="Contáctanos para saber más sobre nuestros cursos de perito clasificador de granos. Estamos aquí para ayudarte a iniciar tu carrera en agricultura.">
   <meta name="author" content="Juan José López Arias">
   <meta name="telephone" content="+9 3444-582795">
+  <!-- Script propio -->
+  <script src="../js/validacion.js"></script>
+  <!-- Link de css -->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -58,7 +55,7 @@
               <a class="nav-link" href="../pages/novedades.html">Novedades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="../pages/acceso.html">Acceso</a>
             </li>
           </ul>
         </div>
@@ -69,7 +66,7 @@
   <main class="main-pu">
     <div class="box-main-pu">
       <div class="encabezado-pu">
-        <h1 class="h1-pu">Bienvenido/a</h1>
+        <h1 id="h1-pu" class="h1-pu">Bienvenido/a</h1>
         <div class="materias-aprobadas-pu">
           <p class="p-pu">Materias aprobadas</p>
           <p class="notas-pu">0/8</p>
@@ -77,86 +74,107 @@
 
       </div>
       <!-- contenido -->
-      <div class="box-contenido-pu">
-        <!-- caja libros -->
-        <div class="box-libros-pu">
-          <!-- nombres libros-->
-          <h2 class="h2-libros-pu">Libros por materia</h2>
-          <div class="box-nombre-link-pu borde-top">
-            <p class="nombres-libros-pu">Analitica 2</p>
-            <a class="links-libros" href="../linksDescargas/ANALÍTICA-II.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
+      <div class="box-general-pu">
+        <div class="box-contenido-pu">
+          <!-- caja libros -->
+          <div class="box-libros-pu">
+            <!-- nombres libros-->
+            <h2 class="h2-libros-pu">Libros por materia</h2>
+            <div class="box-nombre-link-pu borde-top">
+              <p class="nombres-libros-pu">Analitica 2</p>
+              <a class="links-libros" href="../linksDescargas/ANALÍTICA-II.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
+            <div class="box-nombre-link-pu">
+              <p class="nombres-libros-pu">Mercado</p>
+              <a class="links-libros" href="../linksDescargas/MERCADO.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
+            <div class="box-nombre-link-pu">
+              <p class="nombres-libros-pu">Tipificación</p>
+              <a class="links-libros" href="../linksDescargas/TIPIFICACIÓN.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
+            <div class="box-nombre-link-pu">
+              <p class="nombres-libros-pu">Producción y cultivo</p>
+              <a class="links-libros" href="../linksDescargas/PRODUCCIÓN-Y-CULTIVO.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
+            <div class="box-nombre-link-pu">
+              <p class="nombres-libros-pu">Almacenamiento</p>
+              <a class="links-libros" href="../linksDescargas/ALMACENAMIENTO.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
+            <div class="box-nombre-link-pu borde-bot">
+              <p class="nombres-libros-pu">Conservacion</p>
+              <a class="links-libros" href="../linksDescargas/CONSERVACIÓN-DE-GRANOS.pdf" target="_blank"><i
+                  class='bx bx-download'></i></a>
+            </div>
           </div>
-          <div class="box-nombre-link-pu">
-            <p class="nombres-libros-pu">Mercado</p>
-            <a class="links-libros" href="../linksDescargas/MERCADO.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
-          </div>
-          <div class="box-nombre-link-pu">
-            <p class="nombres-libros-pu">Tipificación</p>
-            <a class="links-libros" href="../linksDescargas/TIPIFICACIÓN.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
-          </div>
-          <div class="box-nombre-link-pu">
-            <p class="nombres-libros-pu">Producción y cultivo</p>
-            <a class="links-libros" href="../linksDescargas/PRODUCCIÓN-Y-CULTIVO.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
-          </div>
-          <div class="box-nombre-link-pu">
-            <p class="nombres-libros-pu">Almacenamiento</p>
-            <a class="links-libros" href="../linksDescargas/ALMACENAMIENTO.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
-          </div>
-          <div class="box-nombre-link-pu borde-bot">
-            <p class="nombres-libros-pu">Conservacion</p>
-            <a class="links-libros" href="../linksDescargas/CONSERVACIÓN-DE-GRANOS.pdf" target="_blank"><i
-                class='bx bx-download'></i></a>
-          </div>
-        </div>
-        <div class="box-contacto-pu">
-          <div class="box-link-drive-pu">
-            <h2 class="h2-pu">Link Drive</h2>
-            <a href="https://drive.google.com/drive/folders/1ibgmGAUPkKoo6iaLq-2mxGgixFbGRmjd?usp=sharing"
-              target="_blank"><img class="img-drive-pu" src="../img/logo-drive.png" alt="Logo de google drive"></a>
-          </div>
-          <div class="box-contacto-wpp-pu">
-            <h2 class="h2-pu">Consultas</h2>
-            <div class="box-wpp-pu">
-              <div class="box-link-wpp-pu">
-                <h3 class="h3-pu">Profesor</h3>
-                <a href="https://wa.me/3446405680" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+          <div class="box-contacto-pu">
+            <div class="box-link-drive-pu">
+              <h2 class="h2-pu">Link Drive</h2>
+              <a href="https://drive.google.com/drive/folders/1ibgmGAUPkKoo6iaLq-2mxGgixFbGRmjd?usp=sharing"
+                target="_blank"><img class="img-drive-pu" src="../img/logo-drive.png" alt="Logo de google drive"></a>
+            </div>
+            <div class="box-contacto-wpp-pu">
+              <h2 class="h2-pu">Consultas</h2>
+              <div class="box-comunicacion">
+                <div class="box-link-wpp-pu">
+                  <h3 class="h3-pu">Profesor</h3>
+                  <a href="https://wa.me/3446405680" target="_blank"><img class="logo-wapp" src="../img/logo-wapp.png"
+                      alt="Logo de Whatsapp"></a>
+                </div>
+                <div class="box-link-wpp-pu margin-bot-link-wp">
+                  <h3 class="h3-pu">Tutor</h3>
+                  <a href="https://wa.me/2213077162" target="_blank"><img class="logo-wapp" src="../img/logo-wapp.png"
+                      alt="Logo de Whatsapp"></a>
+                </div>
               </div>
-              <div class="box-link-wpp-pu">
-                <h3 class="h3-pu">Tutor</h3>
-                <a href="https://wa.me/2213077162" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-              </div>
+              
+  
             </div>
           </div>
         </div>
-      </div>
-      <div class="box-notas-pu">
-        <h2 class="h2-pu">Notas</h2>
-        <div class="box-nombres-notas-pu">
-          <div class="nombres-notas-pu">Analatica 1</div>
-          <div class="nombres-notas-pu">Analitica 2</div>
-          <div class="nombres-notas-pu">Producción y cultivo</div>
-          <div class="nombres-notas-pu">Mercado</div>
-          <div class="nombres-notas-pu">Liquidación</div>
-          <div class="nombres-notas-pu">Tipificación</div>
-          <div class="nombres-notas-pu">Almacenamiento</div>
-          <div class="nombres-notas-pu">Conservacion</div>
+        <div class="box-notas-pu">
+          <h2 class="h2-pu">Notas</h2>
+  
+          <div class="box-tabla-notas-pu borde-top">
+            <div class="nombres-notas-pu">Analatica 1</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Analitica 2</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Producción y cultivo</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Mercado</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Liquidación</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Tipificación</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu">
+            <div class="nombres-notas-pu">Almacenamiento</div>
+            <div class="numeros">-</div>
+          </div>
+          <div class="box-tabla-notas-pu borde-bot">
+            <div class="nombres-notas-pu">Conservacion</div>
+            <div class="numeros">-</div>
+          </div>
+  
         </div>
-        <div class="box-numeros-notas-pu">
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-          <div class="numeros"></div>
-        </div>
       </div>
+      
     </div>
   </main>
 
@@ -194,13 +212,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <!-- Script AOS Js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!-- Script propio -->
-  <script src="../js/validacion.js"></script>
+  
 
 </body>
 

@@ -120,6 +120,7 @@
             .logos-referencias {
                 width: 11rem;
                 padding: 10px 5px;
+
                 &:hover {
                     @extend %transition-transform;
                 }
