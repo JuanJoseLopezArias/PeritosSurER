@@ -663,6 +663,10 @@ header .tamaño-dropdown {
 .main-acceso .container-box .box-acceso .form-acceso .form-acceso-child1 .form-box .padding-label {
   padding: 10px;
 }
+.main-acceso .container-box .box-acceso .form-acceso .form-acceso-child1 .form-box #mensajeError {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+}
 
 @media only screen and (min-width: 500px) {
   .main-acceso .container-box .box-acceso {
