@@ -6,7 +6,17 @@ const accesoUsuarios = [
     {
         usuario: "juliaAl@gmail.com",
         clave: "1234",
-        nombre: "Julia"
+        nombre: "Julia",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     },
     {
         usuario: "daniel-ver@hotmail.com",
@@ -41,7 +51,9 @@ console.log(accesoUsuarios[2]);
 console.log(accesoUsuarios[3]);
 console.log(accesoUsuarios[4]);
 console.log(accesoUsuarios[5]);
-
+console.log(accesoUsuarios[0].notas.analitica1); // Output: 2
+console.log(accesoUsuarios[0].notas.analitica2); // Output: 10
+console.log(accesoUsuarios[0].notas.mercado); // Output: 5
 
 function validacion(event) {
     event.preventDefault();
@@ -49,62 +61,27 @@ function validacion(event) {
     const pw = document.getElementById('login-contrasenia').value;
     const redirect = "perfilUsuario.html";
     let verificado = false;
-    let i = 0;
-    let val = accesoUsuarios[i];
-    for (i; i < accesoUsuarios.length; i++) {
+    let val;
+
+    for (let i = 0; i < accesoUsuarios.length; i++) { // Bucle para verificar credenciales
         val = accesoUsuarios[i];
         if (val.usuario === user && val.clave === pw) {
             verificado = true;
             break;
         }
     }
-    if (verificado) {
-        const menu = document.getElementById('menu');
-        if (menu) {
-            console.log("Menu element found:", menu);
-        
-            const nuevoElemento = document.createElement('li');
-            console.log("New list item created:", nuevoElemento);
-        
-            const nuevoEnlace = document.createElement('a');
-            console.log("New link created:", nuevoEnlace);
-        
-            nuevoEnlace.href = redirect;
-            nuevoEnlace.textContent = "Mi Perfil";
-            nuevoElemento.appendChild(nuevoEnlace);
-            console.log("New link appended to list item:", nuevoElemento);
-        
-            menu.appendChild(nuevoElemento);
-            console.log("New list item appended to menu:", menu);
-            
-            localStorage.setItem('enlaceMiPerfil', 'true');
-        } else {
-            console.error("No se encontró el elemento con el id 'menu'");
-        }
 
-        // Guardar datos del usuario en localStorage
-        localStorage.setItem('usuario', user);
-        localStorage.setItem('clave', pw);
-        localStorage.setItem('nombreUsuario', val.nombre);
+    if (verificado) { // Si se verifica el usuario, guarda los datos en localStorage y redirige a "perfilUsuario.html"
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('username', val.nombre);
+        localStorage.setItem('notas', JSON.stringify(val.notas));
+        localStorage.setItem('user', user);
+        localStorage.setItem('pw', pw);
 
-        // Modificar el contenido del elemento <h1> después de que el DOM esté cargado
-        document.addEventListener('DOMContentLoaded', function () {
-            const h1Element = document.getElementById('h1-pu');
-            if (h1Element) {
-                const nombreUsuario = localStorage.getItem('nombreUsuario');
-                h1Element.textContent = `Bienvenido/a, ${nombreUsuario}`;
-            } else {
-                console.error("No se encontró el elemento con el ID 'h1-pu'");
-            }
-
-            
-        });
+        window.location.href = redirect;
     } else {
-        document.getElementById('mensajeError').innerHTML = "Credenciales incorrectas";
+        document.getElementById('mensajeError').innerHTML = "Credenciales incorrectas"; // Si las credenciales son incorrectas arroja un mensaje de "Credenciales incorrectas"
     }
-
-    // Redirigir a perfilUsuario.html
-    history.pushState(null, null, redirect);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
