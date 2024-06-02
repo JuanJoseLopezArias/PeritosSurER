@@ -1,0 +1,9 @@
+Esta pagina trata sobre el curso "Perito clasificador de granos legumbres y oleaginosas" brindado en la provincia de Entre Rios de manera presencial.
+
+La idea de esta pagina es brindar información detallada sobre el contenido y preguntas frecuentes, ademas de brindar un perfil a los usuarios que ya adquirieron el curso (osea que pagaron). La idea es que no se puedan crear los usuarios, sino que a las personas que se comunicaron y pagaron la primer cuota se les cree un usuario y clave a partir de sus datos brindados. De esta manera ellos podran acceder al contenido del curso, libros, sus notas, el drive donde se encuentran las clases grabadas y mas contenido, etc.
+
+La funcion validacion.js se encarga de validar el usuario y contraseña mediante el array accesoUsuarios (donde se encuentran mas datos como el nombre y las notas del alumno).
+En caso de que el usuario sea correcto mediante la API sweet alert se generara un cartel de Credenciales correctas. Al presionar OK redirigira a la pagina de perfilUsuario.html y guardara los datos del array en localStorage, ademas de crear "localStorage.setItem('isLoggedIn', 'true');". 
+
+La funcion perfilUsuario.js se encargara de verificar si el usuario esta logeado mediante "localStorage.setItem('isLoggedIn', 'true')". Si es true se creara una nueva etiqueta en el NAV, el cual sera "Mi Perfil", el cual redirige a perfilUsuario.html. Ademas moficara todos los datos segun lo obtenido del array guardado en el localStorage, como el nombre (modificara el mensaje de bienvenida) las notas (modifica las notas segun los datos del objeto notas del array), y las materias aprobadas segun la cantidad de "notas" que superen 7. El usuario podra cerrar sesion mediante el boton "cerrar sesion", el cual borrara los datos del localStorage y redirigira a acceso.html.
+
