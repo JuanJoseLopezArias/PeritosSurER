@@ -19,41 +19,81 @@ const accesoUsuarios = [
         }  
     },
     {
-        usuario: "daniel-ver@hotmail.com",
+        usuario: "martinramirez1@hotmail.com",
         clave: "1235",
-        nombre: "Daniel"
+        nombre: "Martin",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     },
     {
-        usuario: "raquelpascini@gmail.com",
+        usuario: "ceciliagomez@gmail.com",
         clave: "1236",
-        nombre: "Raquel"
+        nombre: "Cecilia",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     },
     {
-        usuario: "pepe@outlook.com",
+        usuario: "pepeloar@outlook.com",
         clave: "1237",
-        nombre: "José"
+        nombre: "José",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     },
     {
-        usuario: "nahim@coderhouse.com",
+        usuario: "mbelenacc@hotmail.com",
         clave: "1238",
-        nombre: "Nahim"
+        nombre: "Belén",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     },
     {
-        usuario: "dora@hotmail.com",
+        usuario: "lorenzogarcia@hotmail.com",
         clave: "1239",
-        nombre: "Dora"
+        nombre: "Lorenzo",
+        notas: {
+            analitica1: 2,
+            analitica2: 10,
+            mercado: 5,
+            tipificacion: 8,
+            liquidacion: 8,
+            produccion: 6,
+            almacenamiento:7,
+            conservacion: 9
+        }  
     }
 ];
-
-console.log(accesoUsuarios[0]);
-console.log(accesoUsuarios[1]);
-console.log(accesoUsuarios[2]);
-console.log(accesoUsuarios[3]);
-console.log(accesoUsuarios[4]);
-console.log(accesoUsuarios[5]);
-console.log(accesoUsuarios[0].notas.analitica1); // Output: 2
-console.log(accesoUsuarios[0].notas.analitica2); // Output: 10
-console.log(accesoUsuarios[0].notas.mercado); // Output: 5
 
 function validacion(event) {
     event.preventDefault();
@@ -63,7 +103,7 @@ function validacion(event) {
     let verificado = false;
     let val;
 
-    for (let i = 0; i < accesoUsuarios.length; i++) { // Bucle para verificar credenciales
+    for (let i = 0; i < accesoUsuarios.length; i++) {
         val = accesoUsuarios[i];
         if (val.usuario === user && val.clave === pw) {
             verificado = true;
@@ -71,16 +111,30 @@ function validacion(event) {
         }
     }
 
-    if (verificado) { // Si se verifica el usuario, guarda los datos en localStorage y redirige a "perfilUsuario.html"
+    if (verificado) {
+        // If credentials are valid, store data in localStorage and redirect
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('username', val.nombre);
         localStorage.setItem('notas', JSON.stringify(val.notas));
         localStorage.setItem('user', user);
         localStorage.setItem('pw', pw);
-
-        window.location.href = redirect;
+        Swal.fire({
+            icon: "success",
+            title: "Credenciales correctas!",
+            width: 300,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = redirect;
+            } 
+        });
     } else {
-        document.getElementById('mensajeError').innerHTML = "Credenciales incorrectas"; // Si las credenciales son incorrectas arroja un mensaje de "Credenciales incorrectas"
+        // Si las credenciales son incorrectas muestra un mensaje de error utilizando sweet alert
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Credenciales incorrectas!",
+            width: 300,
+        });
     }
 }
 
@@ -88,21 +142,3 @@ document.addEventListener('DOMContentLoaded', function () {
     const submitButton = document.getElementById('submit-button');
     submitButton.addEventListener('click', validacion);
 });
-
-
-
-console.log(menu);
-
-
-
-
-
-
-
-
-
-
-
-
-
-

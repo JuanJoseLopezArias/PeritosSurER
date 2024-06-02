@@ -23,6 +23,11 @@
                 padding: 10px 25px;
             }
 
+            .cerrar-sesion-pu {
+                margin-bottom: 10px;
+                color: red($color: #000000)
+            }
+
             .materias-aprobadas-pu {
                 @extend %caja-contenido-2;
                 background-color: nth($coloresMadera, 2);

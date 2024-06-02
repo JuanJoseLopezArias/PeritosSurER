@@ -715,6 +715,10 @@ header .tamaño-dropdown {
 .main-pu .box-main-pu .encabezado-pu .h1-pu {
   padding: 10px 25px;
 }
+.main-pu .box-main-pu .encabezado-pu .cerrar-sesion-pu {
+  margin-bottom: 10px;
+  color: 0;
+}
 .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu {
   background-color: #dacfbf;
   display: flex;
