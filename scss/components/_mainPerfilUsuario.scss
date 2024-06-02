@@ -19,14 +19,18 @@
             padding: 0px;
             width: 280px;
 
-            .h1-pu {
-                padding: 10px 25px;
+            .caja-h1-cs-pu {
+                @extend %flex-column;
+                .h1-pu {
+                    padding: 10px 25px;
+                }
+    
+                .cerrar-sesion-pu {
+                    margin-bottom: 10px;
+                    color: red($color: #000000)
+                }
             }
-
-            .cerrar-sesion-pu {
-                margin-bottom: 10px;
-                color: red($color: #000000)
-            }
+          
 
             .materias-aprobadas-pu {
                 @extend %caja-contenido-2;
@@ -256,8 +260,11 @@
                 align-content: center;
                 justify-content: space-between;
                 align-items: stretch;
-                width: 880px;
+                width: 90%;
 
+                .caja-h1-cs-pu {
+                    width: 50%;
+                }
                 .materias-aprobadas-pu {
                     border-top-left-radius: 0px;
                     border-top-right-radius: 10px;
