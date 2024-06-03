@@ -95,6 +95,7 @@ const accesoUsuarios = [
     }
 ];
 
+// Funcion de validación de usuarios
 function validacion(event) {
     event.preventDefault();
     const user = document.getElementById('login-usuario').value;
@@ -112,7 +113,7 @@ function validacion(event) {
     }
 
     if (verificado) {
-        // If credentials are valid, store data in localStorage and redirect
+        // Si las credenciales son verificadas muestra un cartel de Credenciales correctas y redirige a perfilUsuario.html, ademas de guardarlo en localStorage.
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('username', val.nombre);
         localStorage.setItem('notas', JSON.stringify(val.notas));
@@ -137,7 +138,7 @@ function validacion(event) {
         });
     }
 }
-
+// Carga de la pagina
 document.addEventListener('DOMContentLoaded', function () {
     const submitButton = document.getElementById('submit-button');
     submitButton.addEventListener('click', validacion);
