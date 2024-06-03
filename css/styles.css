@@ -91,9 +91,6 @@ header .navbar .logo {
 header .navbar .tamaño-dropdown {
   font-size: 0.5rem;
 }
-header .navbar .hidden {
-  display: none;
-}
 
 .main-index {
   margin-top: 140px;
@@ -723,7 +720,15 @@ header .navbar .hidden {
 }
 .main-pu .box-main-pu .encabezado-pu .caja-h1-cs-pu .cerrar-sesion-pu {
   margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.main-pu .box-main-pu .encabezado-pu .caja-h1-cs-pu .cerrar-sesion-pu:hover {
   color: 0;
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.4s;
 }
 .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu {
   background-color: #dacfbf;
