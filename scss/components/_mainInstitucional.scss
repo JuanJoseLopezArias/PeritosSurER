@@ -96,7 +96,10 @@
 
     .caja4-inst {
         margin-bottom: 30px;
-
+        @extend %flex-column;
+        display: flex;
+        align-items: center;
+        
         .encabezado-caja4-inst {
             @extend %caja-contenido-2;
             background-color: nth($coloresMadera, 1);
@@ -106,14 +109,14 @@
         .caja-txt-inst4 {
             @extend %caja-contenido-2;
             align-items: center;
-            width: 280px;
+            width: 300px;
 
             .link-contacto-inst4 {
                 @extend %caja-contenido-1;
                 margin-right: 100px;
                 margin-left: 100px;
                 text-align: center;
-
+                align-items: center;
 
             }
 

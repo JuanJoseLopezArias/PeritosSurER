@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.main-pu .box-main-pu .box-general-pu .box-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu, .main-pu .box-main-pu .box-general-pu, .main-pu .box-main-pu .encabezado-pu .caja-h1-cs-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-novedades .margin-caja-noticias .caja-noticias, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
+.main-pu .box-main-pu .box-general-pu .box-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu, .main-pu .box-main-pu .box-general-pu, .main-pu .box-main-pu .encabezado-pu .caja-h1-cs-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .item-form, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row .formulario-row-column, .main-contacto .caja-main-contacto .caja-formulario, .main-sn .caja4-inst, .main-sn .caja3-sn .box-img-ul-sn, .main-sn .caja3-sn, .main-sn, .main-cursos .caja-acordeones .caja-acordeon, .main-cursos .caja-datos-curso .datos-curso, .main-cursos .caja-datos-curso, .main-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe, .main-index .container-main, .main-index .container-encabezado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +9,7 @@
   justify-content: flex-start;
 }
 
-.main-pu .box-main-pu .box-general-pu .box-notas-pu .box-tabla-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
+.main-pu .box-main-pu .box-general-pu .box-notas-pu .box-tabla-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu .box-nombre-link-pu, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto .formulario-row, .main-contacto .caja-main-contacto, .main-index .container-main .zigzag2, .main-index .container-main .caja-referencias .caja-img-referencias {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,10 +54,10 @@
   min-height: 100vh;
 }
 
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe, .main-index .container-main .caja-zigzag .zigzag {
+.main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe, .main-index .container-main .caja-zigzag .zigzag {
   transition: 0.4s;
 }
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
+.main-index .container-main .zigzag2 .caja-texto-zigzag2 .zigzag2-link:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias .logos-referencias:hover, .main-index .container-main .caja-iframe .caja-iframe-img .iframe iframe:hover, .main-index .container-main .caja-zigzag .zigzag:hover {
   transform: scale(1.05);
 }
 
@@ -386,6 +386,8 @@ header .navbar .tamaño-dropdown {
 }
 .main-sn .caja4-inst {
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .main-sn .caja4-inst .encabezado-caja4-inst {
   background-color: #2a5398;
@@ -393,12 +395,13 @@ header .navbar .tamaño-dropdown {
 }
 .main-sn .caja4-inst .caja-txt-inst4 {
   align-items: center;
-  width: 280px;
+  width: 300px;
 }
 .main-sn .caja4-inst .caja-txt-inst4 .link-contacto-inst4 {
   margin-right: 100px;
   margin-left: 100px;
   text-align: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 700px) {
@@ -462,96 +465,6 @@ header .navbar .tamaño-dropdown {
   }
   .main-sn .caja4-inst .caja-txt-inst4 {
     width: 300px;
-  }
-}
-.main-novedades {
-  background-color: rgba(128, 128, 128, 0.568);
-  margin-top: 110px;
-}
-.main-novedades a {
-  color: black;
-}
-.main-novedades h1 {
-  font-size: 3rem;
-  color: #2a5398;
-  padding-top: 20px;
-  text-align: center;
-}
-.main-novedades .margin-caja-noticias .caja-noticias {
-  font-size: 1rem;
-  background-color: rgb(255, 255, 255);
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades {
-  align-items: flex-start;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-img-noticias {
-  width: 40%;
-  float: left;
-  padding: 15px 5px 15px 10px;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades:hover {
-  opacity: 0.5;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias {
-  line-height: 1.33;
-  width: 60%;
-  float: right;
-  padding: 15px 5px 15px 10px;
-  text-align: left;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias .rubro {
-  border-left: 3px solid black;
-  padding-left: 10px;
-  line-height: 20px;
-  font-weight: 300;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades img {
-  width: 100%;
-  border: 3px solid black;
-  height: 100%;
-  margin: 10px 5px;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades {
-  text-align: start;
-  padding: 10px;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .contenido-main-novedades .link-novedades {
-  margin-top: 40px;
-}
-.main-novedades .margin-caja-noticias .caja-noticias .caja12-main-novedades {
-  border-bottom: 2px solid rgb(0, 0, 0);
-}
-
-@media only screen and (min-width: 750px) {
-  .main-novedades .margin-caja-noticias {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-  }
-  .main-novedades .margin-caja-noticias .caja-noticias {
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 0px 10px;
-  }
-  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-img-noticias {
-    width: 100%;
-  }
-  .main-novedades .margin-caja-noticias .caja-noticias .cajas-main-novedades .caja-txt-noticias {
-    width: 100%;
-  }
-  .main-novedades .margin-caja-noticias .caja-noticias .caja12-main-novedades {
-    border-bottom: none;
-  }
-  .main-novedades a {
-    width: 25%;
   }
 }
 .main-contacto {
