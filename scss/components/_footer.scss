@@ -1,0 +1,52 @@
+footer {
+    background-color: nth($coloresMadera, 10);
+
+}
+
+.img-logosredes {
+    width: 4rem;
+    border-radius: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .cajafooter {
+        padding: 10px 30px;
+        width: 100%;
+    }
+}
+
+.logo {
+    width: 7rem;
+}
+
+@media only screen and (min-width: 500px) {
+    iframe {
+        width: 400px;
+
+    }
+
+    .footer-row {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 812px) {
+
+    .footer-row {
+        width: 100%;
+
+        .cajafooter {
+            width: 33%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 900px) {}

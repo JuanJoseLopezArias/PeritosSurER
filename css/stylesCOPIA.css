@@ -1,0 +1,486 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background-color: rgb(128, 128, 128);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5rem 0;
+    position: fixed ;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+main {
+    margin-top: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 3px solid rgb(0, 0, 0);
+    padding-top: 30px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Inicio header */
+.logo {
+    width: 6rem;
+}
+
+.tamaño-dropdown {
+    font-size: .8rem;
+}
+
+/* Fin header */
+/* Inicio main */
+
+.caja-carousel {
+    z-index: -1;
+}
+
+.encabezado-main-index {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.producto-index-1,
+.producto-index-2,
+.producto-index-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(245, 245, 220);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    align-items: center;
+    width: 328px;
+    height: 357px;
+    justify-content: center;
+}
+
+.titulo-producto-index {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(128, 128, 128);
+    margin: 10px;
+    border: 5px solid rgb(153, 205, 50);
+}
+
+
+.caja-producto-index {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.info-producto-index {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.img-producto-index {
+    width: 14rem;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.caja-presentacion-curso1 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #315330;
+}
+
+.txtdentrodeimagen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.agrandar-tamaño-txt-carousel {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.caja-txt-carousel {
+    background-color: rgba(0, 128, 0, 0.397);
+}
+
+
+.sobre-este-curso {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.img-presentacion-curso1 {
+    width: 100%;
+    height: auto;
+}
+
+.caja-estructura-duracion-nivel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.estructura-duracion-nivel {
+    width: 14rem;
+}
+
+
+.caja-contenido-img-cursos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.caja123-est-dur-niv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.caja-contenido-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.contenido-curso {
+    padding-left: 40px;
+}
+
+.titulo-contenido-cursos {
+    text-decoration: underline;
+}
+
+.caja-valor-cursos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.493);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.p-cursos {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.h-cursos,
+.h-inst {
+    color: #000069;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.caja-inst-foto-principal {
+    background-color: rgb(245, 245, 220);
+    display: flex;
+    justify-content: center;
+}
+
+.inst-foto-principal {
+    width: 280px;
+    height: 192px;
+}
+
+.caja1-inst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.caja12-inst,
+.caja13-inst {
+    padding: 0px 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.caja2-inst {
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+}
+
+.caja3-inst {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+}
+
+.caja31-inst {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja32-inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-que-ofrecemos {
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+.img-que-ofrecemos {
+    width: 10rem;
+    margin: 10px 0px;
+}
+
+.main-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-novedades {
+    width: 15rem;
+}
+
+.cajas-main-novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 15px;
+}
+
+.caja12-main-novedades {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.h2-novedades {
+    text-align: center;
+    margin-top: 15px;
+    color: green;
+}
+
+.h1-novedades {
+    text-align: center;
+    color: rgb(0, 0, 255);
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+}
+/* Fin main */
+
+/* Inicio footer */
+.txt-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.img-logosredes {
+    width: 4rem;
+}
+
+.img-logosredes:hover {
+    width: 4.5rem;
+}
+
+.caja-redessociales {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.caja1-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.caja2-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 232px;
+}
+
+.caja3-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+iframe {
+    width: 250px;
+    height: 150px;
+}
+
+/* Fin footer */
+
+@media only screen and (min-width: 500px) {
+    iframe {
+        width: 400px;
+
+    }
+
+    .caja-contenido-cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-presentacion-curso1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .txtdentrodeimagen {
+        
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    
+    .titulo-contenido-cursos {
+        padding-right: 250px
+    }
+
+    .caja31-inst {
+        flex-direction: row;
+
+    }
+
+    .caja32-inst {
+        width: 250px;
+    }
+
+    .inst-foto-principal {
+        width: 450px;
+        height: 300px;
+    }
+
+    .img-novedades {
+        width: 400px;
+    }
+
+    .h1-novedades {
+        width: 450px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .caja-carousel {
+        padding: 0px 150px;
+    }
+
+    .caja2-footer {
+        width: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .img-presentacion-curso1 {
+        width: 900px;
+        height: 500px;
+    }
+
+    .txtdentrodeimagen {
+        width: 60%;
+        font-size: 2.5rem;
+    }
+
+    .caja1-inst {
+        text-align: center;
+    }
+
+    .caja12-inst {
+        border-right: 3px solid rgb(0, 0, 0);
+    }
+
+    .caja12-inst,
+    .caja13-inst {
+        width: 50%;
+    }
+
+    .caja31-inst {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .inst-foto-principal {
+        width: 800px;
+        height: 400px;
+    }
+
+    .cajas-main-novedades {
+        flex-direction: row;
+        
+    }
+
+    .contenido-main-novedades {
+        margin-left: 25px;
+    }
+
+    .img-novedades {
+        width: 300px;
+    }
+}

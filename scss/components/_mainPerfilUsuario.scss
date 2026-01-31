@@ -1,0 +1,302 @@
+.main-pu {
+  background-image: url(../../img/bg-acceso.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 100px;
+
+  .box-main-pu {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .encabezado-pu {
+      text-align: center;
+      @extend %caja-contenido-2;
+      background-color: nth($coloresMadera, 7);
+      padding: 0px;
+      width: 280px;
+
+      .caja-h1-cs-pu {
+        @extend %flex-column;
+        .h1-pu {
+          padding: 10px 25px;
+        }
+
+        .cerrar-sesion-pu {
+          margin-bottom: 10px;
+          border-radius: 5px;
+          background-color: white;
+          color: black;
+
+          &:hover {
+            color: red($color: #000000);
+            transform: scale(1.05);
+            cursor: pointer;
+            transition: 0.4s;
+          }
+        }
+      }
+
+      .materias-aprobadas-pu {
+        @extend %caja-contenido-2;
+        background-color: nth($coloresMadera, 2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 20px 10px 10px 10px;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        .notas-pu {
+          @extend %caja-contenido-1;
+          background-color: nth($coloresMadera, 1);
+          width: 100px;
+          margin: 5px 10px 5px 10px;
+        }
+      }
+    }
+
+    .box-general-pu {
+      @extend %flex-column;
+
+      .box-contenido-pu {
+        @extend %flex-column;
+
+        .h2-pu {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .box-libros-pu {
+          @extend %flex-column;
+          @extend %caja-contenido-2;
+          background-color: nth($coloresMadera, 2);
+          margin: 5px 10px 30px 10px;
+          width: 280px;
+
+          .h2-libros-pu {
+            margin: 15px;
+          }
+
+          .box-nombre-link-pu {
+            @extend %flex-row;
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: nth($coloresMadera, 7);
+
+            .nombres-libros-pu {
+              margin: 0px;
+            }
+
+            .links-libros {
+              width: 2rem;
+
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+
+          .borde-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+
+          .borde-bot {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+        }
+
+        .box-contacto-pu {
+          width: 280px;
+          @extend %flex-column;
+
+          .box-link-drive-pu {
+            @extend %caja-contenido-2;
+            width: 280px;
+            background-color: nth($coloresMadera, 2);
+
+            .img-drive-pu {
+              width: 5rem;
+              margin: 10px;
+
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+
+          .box-contacto-wpp-pu {
+            @extend %caja-contenido-2;
+            width: 280px;
+            background-color: nth($coloresMadera, 2);
+
+            .box-link-wpp-pu {
+              @extend %caja-contenido-2;
+              background-color: nth($coloresMadera, 7);
+
+              .logo-wapp {
+                width: 4rem;
+                padding: 5px 0px 10px 0px;
+
+                &:hover {
+                  transform: scale(1.2);
+                }
+              }
+            }
+
+            .margin-bot-link-wp {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .box-notas-pu {
+        @extend %caja-contenido-2;
+        @extend %flex-column;
+        width: 280px;
+        background-color: nth($coloresMadera, 2);
+        height: 350px;
+
+        .box-tabla-notas-pu {
+          @extend %flex-row;
+          width: 100%;
+          justify-content: space-between;
+          padding: 5px 15px;
+          border: 1px solid black;
+          background-color: nth($coloresMadera, 7);
+        }
+
+        .borde-top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .borde-bot {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .main-pu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .box-main-pu {
+      width: 100%;
+
+      .encabezado-pu {
+        width: 600px;
+
+        .materias-aprobadas-pu {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+
+      .box-general-pu {
+        .box-contenido-pu {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: flex-start;
+
+          .box-libros-pu {
+            margin: 5px 40px 30px 10px;
+          }
+        }
+
+        .box-contacto-pu {
+          .box-contacto-wpp-pu {
+            height: 197px;
+
+            .box-comunicacion {
+              display: flex;
+              flex-direction: row;
+              height: 130px;
+
+              .box-link-wpp-pu {
+                width: 120px;
+                height: 120px;
+
+                .h3-pu {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+
+        .box-notas-pu {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main-pu {
+    .box-main-pu {
+      .encabezado-pu {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 90%;
+
+        .caja-h1-cs-pu {
+          width: 50%;
+        }
+        .materias-aprobadas-pu {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 10px;
+          width: 50%;
+        }
+      }
+
+      .box-general-pu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: stretch;
+        justify-content: center;
+        align-content: center;
+
+        .box-contenido-pu {
+          width: 50%;
+
+          .box-libros-pu {
+            margin: 5px 10px 30px 10px;
+          }
+        }
+
+        .box-notas-pu {
+          width: 400px;
+        }
+      }
+    }
+  }
+}

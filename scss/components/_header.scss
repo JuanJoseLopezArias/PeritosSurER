@@ -1,0 +1,27 @@
+header {
+  background-color: #9bcfb8;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+  .navbar {
+    align-content: center;
+
+    .nav-item {
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.315);
+      }
+    }
+
+    .logo {
+      width: 5rem;
+    }
+
+    .tamaño-dropdown {
+      font-size: 0.5rem;
+    }
+  }
+}
