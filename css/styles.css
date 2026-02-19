@@ -449,8 +449,7 @@ header .navbar .tamaño-dropdown {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
-  /* CENTRA LA IMAGEN VERTICALMENTE */
+  align-items: center; /* CENTRA LA IMAGEN VERTICALMENTE */
   margin-bottom: 2rem;
 }
 
@@ -499,11 +498,9 @@ header .navbar .tamaño-dropdown {
 .sobre-nosotros__badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  /* Centrados en desktop */
+  justify-content: center; /* Centrados en desktop */
   gap: 1rem;
-  margin: 2rem 0 3rem;
-  /* Espacio arriba y abajo */
+  margin: 2rem 0 3rem; /* Espacio arriba y abajo */
   padding: 0.5rem 0;
 }
 
@@ -516,8 +513,7 @@ header .navbar .tamaño-dropdown {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  white-space: nowrap;
-  /* Evita que se rompan en desktop */
+  white-space: nowrap; /* Evita que se rompan en desktop */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
@@ -536,14 +532,12 @@ header .navbar .tamaño-dropdown {
 @media (max-width: 768px) {
   .sobre-nosotros__badges {
     flex-direction: column;
-    align-items: stretch;
-    /* Ocupan todo el ancho */
+    align-items: stretch; /* Ocupan todo el ancho */
     gap: 0.8rem;
     margin: 1.5rem 0;
   }
   .badge {
-    white-space: normal;
-    /* Permite saltos de línea */
+    white-space: normal; /* Permite saltos de línea */
     justify-content: center;
     text-align: center;
     width: 100%;
