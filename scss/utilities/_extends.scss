@@ -1,0 +1,83 @@
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: flex-start;
+
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+%caja-contenido-1 {
+    background-color: nth($coloresMadera, 2);
+    color: black;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: 0.4s;
+    border: 0.2rem black solid;
+
+    &:hover {
+        box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+        transform: scale(1.045);
+    }
+}
+
+%caja-contenido-2 {
+    background-color: nth($coloresMadera, 7);
+    color: black;
+    padding: 10px 10px;
+    margin: 5px 10px 30px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 0.2rem black solid;
+
+    &:hover {
+        box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
+    }
+}
+
+%h-zigzag {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+%bgvideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100vh;
+
+}
+
+%transition-transform {
+    transition: 0.4s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+%efectoformulariocontacto {
+    font-size: 1.1em;
+    background-color: #ddd;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    
+}

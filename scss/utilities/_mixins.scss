@@ -1,0 +1,15 @@
+@mixin width-heigth ($width,$heigth){
+    width: $width;
+    height: $heigth;
+}
+
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
