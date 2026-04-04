@@ -35,7 +35,7 @@
   transform: scale(1.045);
 }
 
-.main-pu .box-main-pu .box-general-pu .box-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu .box-link-wpp-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu, .main-pu .box-main-pu .encabezado-pu, .main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .charlas-container .charla-card, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
+.main-pu .box-main-pu .box-general-pu .box-notas-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu .box-link-wpp-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu, .main-pu .box-main-pu .encabezado-pu, .main-acceso .container-box .box-acceso, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos, .main-index .container-main .zigzag2 .caja-texto-zigzag2, .main-index .container-main .caja-referencias, .main-index .container-main .caja-iframe {
   background-color: #9e9e9e;
   color: black;
   padding: 10px 10px;
@@ -44,7 +44,7 @@
   font-size: 1rem;
   border: 0.2rem black solid;
 }
-.main-pu .box-main-pu .box-general-pu .box-notas-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu .box-link-wpp-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu:hover, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover, .main-pu .box-main-pu .encabezado-pu:hover, .main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .charlas-container .charla-card:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
+.main-pu .box-main-pu .box-general-pu .box-notas-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu .box-link-wpp-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-contacto-wpp-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-contacto-pu .box-link-drive-pu:hover, .main-pu .box-main-pu .box-general-pu .box-contenido-pu .box-libros-pu:hover, .main-pu .box-main-pu .encabezado-pu .materias-aprobadas-pu:hover, .main-pu .box-main-pu .encabezado-pu:hover, .main-acceso .container-box .box-acceso:hover, .main-contacto .caja-main-contacto .caja-formulario .formulario-main-contacto:hover, .main-cursos .caja-datos-curso .datos-curso .datos-txt-cursos:hover, .main-index .container-main .zigzag2 .caja-texto-zigzag2:hover, .main-index .container-main .caja-referencias:hover, .main-index .container-main .caja-iframe:hover {
   box-shadow: 0px 0px 31px 0px rgb(0, 0, 0);
 }
 
@@ -426,52 +426,73 @@ header .navbar .tamaño-dropdown {
 }
 .charlas-container {
   width: 100%;
-  margin: 60px 0;
+  margin: 70px 0;
   text-align: center;
 }
 .charlas-container .charlas-titulo-box {
   display: inline-block;
   margin-bottom: 50px;
-  padding: 15px 40px;
+  padding: 18px 45px;
   background-color: #dacfbf;
+  border-radius: 60px;
 }
 .charlas-container .charlas-titulo-box .charlas-titulo {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin: 0;
   color: #0e4a3c;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 .charlas-container .charlas-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  padding: 0 30px;
+  gap: 50px;
+  padding: 0 20px;
 }
 .charlas-container .charla-card {
-  width: 360px;
-  text-align: center;
+  flex: 1 1 380px;
+  max-width: 450px;
+  background: white;
+  border-radius: 32px;
+  padding: 35px 25px 40px;
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
-  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid #e0e8e5;
 }
 .charlas-container .charla-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-12px);
+  box-shadow: 0 30px 45px -15px rgba(0, 0, 0, 0.2);
+}
+.charlas-container .charla-card .charla-icono {
+  font-size: 4rem;
+  margin-bottom: 15px;
 }
 .charlas-container .charla-card .charla-ciudad {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #0e4a3c;
   margin: 0 0 20px 0;
+  line-height: 1.3;
+  word-break: break-word;
+  hyphens: auto;
 }
-.charlas-container .charla-card .charla-fecha,
-.charlas-container .charla-card .charla-lugar,
-.charlas-container .charla-card .charla-modalidad {
+.charlas-container .charla-card .charla-destacado {
+  font-size: 1.2rem;
+  background: #f2f7f4;
+  padding: 12px;
+  border-radius: 50px;
+  margin: 15px 0;
+  color: #1a5a4a;
+}
+.charlas-container .charla-card .charla-lugar {
   font-size: 1.1rem;
-  margin: 12px 0;
-  line-height: 1.5;
+  margin: 10px 0;
+  color: #333;
 }
 .charlas-container .charla-card .charla-modalidad {
+  font-size: 1rem;
   font-weight: 500;
   color: #b86b4c;
   margin-top: 20px;
@@ -480,39 +501,59 @@ header .navbar .tamaño-dropdown {
   display: inline-block;
   background-color: #0e4a3c;
   color: white;
-  padding: 12px 24px;
-  border-radius: 40px;
+  padding: 14px 28px;
+  border-radius: 60px;
   text-decoration: none;
-  font-weight: 500;
-  margin: 15px 0 5px;
-  transition: background 0.3s;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 20px 0 10px;
+  transition: background 0.3s, transform 0.2s;
 }
 .charlas-container .charla-card .charla-link:hover {
   background-color: #1a6a55;
+  transform: scale(1.02);
   text-decoration: none;
   color: white;
 }
+.charlas-container .charla-card--presencial {
+  border-top: 8px solid #2a7f6e;
+}
+.charlas-container .charla-card--virtual {
+  border-top: 8px solid #b86b4c;
+}
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .charlas-container .charlas-titulo-box .charlas-titulo {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .charlas-container .charla-card {
-    width: 320px;
-    padding: 25px 15px;
+    flex: 1 1 320px;
+    padding: 25px 20px;
+  }
+  .charlas-container .charla-card .charla-ciudad {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 700px) {
+  .charlas-container {
+    margin: 40px 0;
+  }
   .charlas-container .charlas-titulo-box {
-    padding: 10px 25px;
+    padding: 12px 25px;
   }
   .charlas-container .charlas-titulo-box .charlas-titulo {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .charlas-container .charla-card {
-    width: 90%;
-    max-width: 350px;
+    flex: 1 1 100%;
+    max-width: 400px;
+  }
+  .charlas-container .charla-card .charla-destacado {
+    font-size: 1rem;
+  }
+  .charlas-container .charla-card .charla-link {
+    padding: 12px 20px;
+    font-size: 1rem;
   }
 }
 /* ============================================ */

@@ -179,25 +179,27 @@
     }
   }
 }
-// Charlas informativas - versión más grande
+// Charlas informativas - diseño amplio y destacado
 .charlas-container {
   width: 100%;
-  margin: 60px 0;
+  margin: 70px 0;
   text-align: center;
 
-  // Caja del título
+  // Título principal con caja
   .charlas-titulo-box {
     @extend %caja-contenido-1;
     display: inline-block;
     margin-bottom: 50px;
-    padding: 15px 40px;
+    padding: 18px 45px;
     background-color: nth($coloresMadera, 2);
+    border-radius: 60px; // más redondeado
 
     .charlas-titulo {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin: 0;
       color: #0e4a3c;
-      font-weight: 600;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
   }
 
@@ -205,89 +207,134 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    padding: 0 30px;
+    gap: 50px;
+    padding: 0 20px;
   }
 
   .charla-card {
-    @extend %caja-contenido-2;
-    width: 360px;               // Más ancho
+    flex: 1 1 380px; // más ancho, flexible
+    max-width: 450px;
+    background: white;
+    border-radius: 32px;
+    padding: 35px 25px 40px;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    padding: 30px 20px;
+    border: 1px solid #e0e8e5;
 
     &:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+      transform: translateY(-12px);
+      box-shadow: 0 30px 45px -15px rgba(0, 0, 0, 0.2);
+    }
+
+    // Icono grande
+    .charla-icono {
+      font-size: 4rem;
+      margin-bottom: 15px;
     }
 
     .charla-ciudad {
       font-size: 2rem;
-      font-weight: 600;
+      font-weight: 700;
       color: #0e4a3c;
       margin: 0 0 20px 0;
+      line-height: 1.3;
+      word-break: break-word;
+      hyphens: auto;
     }
 
-    .charla-fecha,
-    .charla-lugar,
-    .charla-modalidad {
+    .charla-destacado {
+      font-size: 1.2rem;
+      background: #f2f7f4;
+      padding: 12px;
+      border-radius: 50px;
+      margin: 15px 0;
+      color: #1a5a4a;
+    }
+
+    .charla-lugar {
       font-size: 1.1rem;
-      margin: 12px 0;
-      line-height: 1.5;
+      margin: 10px 0;
+      color: #333;
     }
 
     .charla-modalidad {
+      font-size: 1rem;
       font-weight: 500;
       color: #b86b4c;
       margin-top: 20px;
     }
 
-    // Botón/link de la reunión virtual
+    // Botón para reunión virtual
     .charla-link {
       display: inline-block;
       background-color: #0e4a3c;
       color: white;
-      padding: 12px 24px;
-      border-radius: 40px;
+      padding: 14px 28px;
+      border-radius: 60px;
       text-decoration: none;
-      font-weight: 500;
-      margin: 15px 0 5px;
-      transition: background 0.3s;
-      font-size: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin: 20px 0 10px;
+      transition:
+        background 0.3s,
+        transform 0.2s;
 
       &:hover {
         background-color: #1a6a55;
+        transform: scale(1.02);
         text-decoration: none;
         color: white;
       }
     }
   }
+
+  // Variantes sutiles por tipo (opcional)
+  .charla-card--presencial {
+    border-top: 8px solid #2a7f6e;
+  }
+  .charla-card--virtual {
+    border-top: 8px solid #b86b4c;
+  }
 }
 
 // Responsive
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .charlas-container {
     .charlas-titulo-box .charlas-titulo {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
     .charla-card {
-      width: 320px;
-      padding: 25px 15px;
+      flex: 1 1 320px;
+      padding: 25px 20px;
+      .charla-ciudad {
+        font-size: 1.8rem;
+      }
     }
   }
 }
 
 @media (max-width: 700px) {
   .charlas-container {
+    margin: 40px 0;
     .charlas-titulo-box {
-      padding: 10px 25px;
+      padding: 12px 25px;
       .charlas-titulo {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
     }
     .charla-card {
-      width: 90%;
-      max-width: 350px;
+      flex: 1 1 100%;
+      max-width: 400px;
+      .charla-destacado {
+        font-size: 1rem;
+      }
+      .charla-link {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
     }
   }
 }
