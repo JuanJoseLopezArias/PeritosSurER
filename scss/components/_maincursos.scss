@@ -179,22 +179,22 @@
     }
   }
 }
-// Charlas informativas
+// Charlas informativas - versión más grande
 .charlas-container {
   width: 100%;
-  margin: 40px 0;
+  margin: 60px 0;
   text-align: center;
 
   // Caja del título
   .charlas-titulo-box {
-    @extend %caja-contenido-1; // Usa el mismo estilo que otras cajas destacadas
+    @extend %caja-contenido-1;
     display: inline-block;
-    margin-bottom: 40px;
-    padding: 10px 30px;
-    background-color: nth($coloresMadera, 2); // Ajustá según tu paleta
+    margin-bottom: 50px;
+    padding: 15px 40px;
+    background-color: nth($coloresMadera, 2);
 
     .charlas-titulo {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin: 0;
       color: #0e4a3c;
       font-weight: 600;
@@ -205,61 +205,89 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    padding: 0 20px;
+    gap: 40px;
+    padding: 0 30px;
   }
 
   .charla-card {
     @extend %caja-contenido-2;
-    width: 280px;
+    width: 360px;               // Más ancho
     text-align: center;
-    transition: transform 0.3s;
-    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 30px 20px;
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
     }
 
     .charla-ciudad {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 600;
       color: #0e4a3c;
-      margin: 0 0 15px 0;
+      margin: 0 0 20px 0;
     }
 
     .charla-fecha,
     .charla-lugar,
     .charla-modalidad {
-      font-size: 1rem;
-      margin: 10px 0;
-      line-height: 1.4;
+      font-size: 1.1rem;
+      margin: 12px 0;
+      line-height: 1.5;
     }
 
     .charla-modalidad {
       font-weight: 500;
       color: #b86b4c;
-      margin-top: 15px;
+      margin-top: 20px;
+    }
+
+    // Botón/link de la reunión virtual
+    .charla-link {
+      display: inline-block;
+      background-color: #0e4a3c;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 15px 0 5px;
+      transition: background 0.3s;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: #1a6a55;
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }
 
 // Responsive
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   .charlas-container {
     .charlas-titulo-box .charlas-titulo {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .charla-card {
-      width: 260px;
+      width: 320px;
+      padding: 25px 15px;
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .charlas-container {
+    .charlas-titulo-box {
+      padding: 10px 25px;
+      .charlas-titulo {
+        font-size: 1.5rem;
+      }
+    }
     .charla-card {
       width: 90%;
-      max-width: 300px;
+      max-width: 350px;
     }
   }
 }
